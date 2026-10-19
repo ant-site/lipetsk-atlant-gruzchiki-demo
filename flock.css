@@ -1,0 +1,12 @@
+/* Стая: частицы летят как стая скворцов и от прокрутки собираются в логотип (по мотивам 21st.dev Murmuration, Aura) */
+.flock{position:relative;height:240vh;background:#0c1626;width:100vw;margin-left:calc(50% - 50vw)}
+.flock__stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate}
+.flock__cv{position:absolute;inset:0;width:100%;height:100%;display:block}
+.flock__scrim{position:absolute;left:0;right:0;bottom:0;height:44%;background:linear-gradient(to top,#0c1626 10%,rgba(12,22,38,.85) 55%,rgba(12,22,38,0));pointer-events:none}
+.flock__txt{position:absolute;left:0;right:0;bottom:clamp(20px,6vh,64px);padding:0 max(16px,5vw);display:grid;gap:12px;justify-items:center;text-align:center;color:#f3eee2}
+.flock__tag{font:600 .78rem/1 var(--f-text);letter-spacing:.18em;text-transform:uppercase;color:var(--c-accent);display:block}
+.flock__txt h2{font:800 clamp(1.5rem,4.2vw,3rem)/1.1 var(--f-display);margin:0;max-width:22ch}
+.flock__txt p{margin:0;max-width:54ch;color:#c9c3b4;font-size:clamp(.95rem,1.4vw,1.1rem);line-height:1.5}
+.flock__txt .flock__who{font-size:.85rem;color:#9f9a8c}
+@media (max-width:640px){.flock{height:210vh}.flock__txt{bottom:84px;gap:9px}.flock__txt h2{max-width:17ch}}
+@media (prefers-reduced-motion:reduce){.flock{height:auto}.flock__stick{position:relative;height:min(100svh,760px)}}
